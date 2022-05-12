@@ -14,10 +14,8 @@ import config from "../contracts/config";
 import { BsArrowUpRight } from 'react-icons/bs'
 import "./User.css";
 import LOGO from "../assets/logo.png";
-import ETH from "../assets/eth.png";
 import UST from '../assets/UST.png';
 import USDC from '../assets/USDC.svg';
-import Terra from '../assets/terra.svg';
 import Warning from '../assets/warning.svg';
 import danger from '../assets/danger.svg';
 import terra_dark from '../assets/symbol-terra-alone-dark.svg';
@@ -789,27 +787,27 @@ const UserScreen = (props) => {
                     <div className="footer-link-list">
                       <h6 className="footer-link-list-heading">Terraform Labs<br /></h6>
                       <a href="mailto:general@terra.money" className="footer-link-list-link">Contact</a>
-                      <a href="https://jobs.lever.co/terra" target="_blank" className="footer-link-list-link">Careers</a>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" target="_blank" className="footer-link-list-link">Whitepaper</a>
+                      <a href="https://jobs.lever.co/terra" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Careers</a>
+                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Whitepaper</a>
                     </div>
                     <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0574-682d0569" className="footer-link-list">
                       <h6 className="footer-link-list-heading">Develop<br /></h6>
-                      <a href="https://docs.terra.money/" target="_blank" className="footer-link-list-link">Docs</a>
-                      <a href="https://github.com/terra-money" target="_blank" className="footer-link-list-link">Github</a>
-                      <a href="https://academy.terra.money/courses/cosmwasm-smart-contracts-i" target="_blank" className="footer-link-list-link">Academy</a>
-                      <a href="http://lfg.org/grants" target="_blank" className="footer-link-list-link">Grants</a>
+                      <a href="https://docs.terra.money/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Docs</a>
+                      <a href="https://github.com/terra-money" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Github</a>
+                      <a href="https://academy.terra.money/courses/cosmwasm-smart-contracts-i" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Academy</a>
+                      <a href="http://lfg.org/grants" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Grants</a>
                       <a href="https://www.terra.money/bugcrowd" className="footer-link-list-link">Bug Bounty</a>
                     </div>
                     <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0583-682d0569" className="footer-link-list">
                       <h6 className="footer-link-list-heading">Participate<br /></h6>
                       <a href="https://www.terra.money/community" className="footer-link-list-link">Community</a>
-                      <a href="https://www.terradappexpo.com/" target="_blank" className="footer-link-list-link">Events</a>
-                      <a href="https://lunaloot.com/" target="_blank" className="footer-link-list-link">Swag</a>
+                      <a href="https://www.terradappexpo.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Events</a>
+                      <a href="https://lunaloot.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Swag</a>
                     </div>
                     <div className="footer-link-list">
                       <h6 className="footer-link-list-heading">Other<br /></h6>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82cb211ed313e465db8cc_Terra_TOS.pdf" target="_blank" className="footer-link-list-link">Terms of Use</a>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82de98fc6724a582b6a05_Terra_Cookie_Policy.pdf" target="_blank" className="footer-link-list-link">Cookie Policy</a>
+                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82cb211ed313e465db8cc_Terra_TOS.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Terms of Use</a>
+                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82de98fc6724a582b6a05_Terra_Cookie_Policy.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Cookie Policy</a>
                     </div>
                   </div>
                 </div>
@@ -817,25 +815,25 @@ const UserScreen = (props) => {
               <div className="footer-foot">
                 <div className="footer-foot-social-icons">
                   <div className="social-icons">
-                    <a href="https://twitter.com/terra_money" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://twitter.com/terra_money" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={twitter} loading="lazy" alt="" />
                     </a>
                     <a href="https://t.me/TerraLunaChat" target="_blank" className="menu__social-icon w-inline-block">
                       <img src={telegram} loading="lazy" alt="" />
                     </a>
-                    <a href="https://www.reddit.com/r/terraluna/" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://www.reddit.com/r/terraluna/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={reddit} loading="lazy" alt="" />
                     </a>
-                    <a href="https://discord.gg/EuKCeGFb93" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://discord.gg/EuKCeGFb93" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={discord} loading="lazy" alt="" />
                     </a>
-                    <a href="https://github.com/terra-money/" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://github.com/terra-money/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={github} loading="lazy" alt="" />
                     </a>
-                    <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={youtube} loading="lazy" alt="" />
                     </a>
-                    <a href="https://medium.com/terra-money" target="_blank" className="menu__social-icon last w-inline-block">
+                    <a href="https://medium.com/terra-money" target="_blank" rel="noopener noreferrer" className="menu__social-icon last w-inline-block">
                       <img src={medium} loading="lazy" alt="" />
                     </a>
                   </div>
