@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useReducer } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs'
 import axios from 'axios';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { NotificationContainer, NotificationManager } from "react-notifications";
 import Web3Modal from "web3modal";
 import 'react-responsive-modal/styles.css';
@@ -622,7 +623,29 @@ const UserScreen = (props) => {
       <div className="page-wrapper">
         <div className="preloader"><div className="wow zoomIn"><img src={LOGO} alt="" /></div></div>
         <span className="header-span"></span>
-        <header className="main-header">
+        <Navbar variant="dark" bg="dark" expand="lg">
+          <Container fluid>
+            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbar-dark-example" />
+            <Navbar.Collapse id="navbar-dark-example">
+              <Nav>
+                <NavDropdown
+                  id="nav-dropdown-dark-example"
+                  title="Dropdown"
+                  menuVariant="dark"
+                >
+                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+        
+        {/* <header className="main-header">
           <div className="container-fluid">
             <div className="main-box">
               <div className="logo"><a href="/"><img src={LOGO} alt="" /></a></div>
@@ -648,7 +671,7 @@ const UserScreen = (props) => {
 
             </div>
           </div>
-        </header>
+        </header> */}
           <section className='section-1'>
             <div className='container'>
               <div className='row'>
