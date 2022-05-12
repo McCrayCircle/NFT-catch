@@ -594,7 +594,6 @@ const UserScreen = (props) => {
   }, []);
   const disconnect = useCallback(async function () {
     await web3Modal.clearCachedProvider();
-    // setSigner(null);
     setShowAccountAddress(null);
     setMyaddress(null);
     dispatch({
@@ -615,20 +614,9 @@ const UserScreen = (props) => {
           address: accounts[0],
         });
       };
-
-      // https://docs.ethers.io/v5/concepts/best-practices/#best-practices--network-changes
-      const handleChainChanged = (_hexChainId) => {
-        // window.location.reload();
-      };
-
-      // provider.on("accountsChanged", handleAccountsChanged);
-      // provider.on("chainChanged", handleChainChanged);
-
-      // Subscription Cleanup
       return () => {
         if (provider.removeListener) {
           provider.removeListener("accountsChanged", handleAccountsChanged);
-          // provider.removeListener("chainChanged", handleChainChanged);
         }
       };
     }
@@ -645,8 +633,6 @@ const UserScreen = (props) => {
               <div className="logo"><a href="/"><img src={LOGO} alt="" /></a></div>
               <div className="nav-outer">
                 <div className="outer-box">
-                  {/* <a href="/" className="download-btn"><img src={playstore} alt="" /></a>
-                  <a href="/" className="download-btn"><img src={appstore} alt="" /></a> */}
                   {web3Provider ? (
                     <button
                       className="theme-btn btn-style-one"
