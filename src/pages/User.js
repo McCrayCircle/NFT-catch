@@ -13,7 +13,7 @@ import $ from 'jquery';
 import config from "../contracts/config";
 import { BsArrowUpRight } from 'react-icons/bs'
 import "./User.css";
-import LOGO from "../assets/logo.png";
+import LOGO from "../assets/symbol-terra-blue.svg";
 import UST from '../assets/UST.png';
 import USDC from '../assets/USDC.svg';
 import Warning from '../assets/warning.svg';
@@ -670,7 +670,7 @@ const UserScreen = (props) => {
                         <br />
                         <div className="warning">
                           <div style={{paddingRight: "12px"}}>
-                              <img src={Warning} size="18" className="icon" />
+                              <img src={Warning} size="18" className="icon" alt='warning' />
                           </div>
                           <div className="amount custom-1">We are currently only allowing redemption of UST for USDC on Ethereum (ETH) and Binance Smart Chain (BSC) networks. Please make sure you are connected to one of these networks.</div>
                         </div>
@@ -688,14 +688,14 @@ const UserScreen = (props) => {
 
                         <div className="balance1">
                           <div className="balance">
-                            <img src={UST} size='18' className="icon" />
+                            <img src={UST} size='18' className="icon" alt='UST' />
                             <div className="amount">UST Balance: $1000</div>
                           </div>
                         </div>
 
                         <div className="balance1">
                           <div className="balance">
-                            <img src={USDC} className="icon" />
+                            <img src={USDC} className="icon" alt='icon' />
                             <div className="amount">Redeemed USDC: $1470.59</div>
                           </div>
                         </div>
@@ -705,7 +705,7 @@ const UserScreen = (props) => {
                         <div style={{marginBottom: "20px"}}>
                           <div className="error1">
                               <div style={{paddingRight: "12px"}}>
-                                <img src={danger} className="icon" />
+                                <img src={danger} className="icon" alt='danger'/>
                               </div>
                               <div className="custom-1">Any wallets found attempting to act maliciously will be banned and not receive any value redemption.</div>
                           </div>
@@ -723,7 +723,7 @@ const UserScreen = (props) => {
             <div className='howto'>
               <h2 className='text-center'>#How Does Terra Work?</h2>
               <div className='play-button'>
-                <a href='#'>
+                <a href='#' >
                   <div className='play'></div>
                 </a>
               </div>
@@ -737,7 +737,7 @@ const UserScreen = (props) => {
                       <h3 className="display-heading-3">How the Terra protocol works</h3>
                       <div className="large-text space-bottom">Explore the inner workings of the Terra protocol and how Luna maintains the price of Terra stablecoins.</div>
                     </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html" target="_blank" className="btn btn-dark custom-btn">
+                    <a href="https://docs.terra.money/Concepts/Protocol.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
                       <div>Learn more</div><BsArrowUpRight />
                     </a>
                 </div>
@@ -746,7 +746,7 @@ const UserScreen = (props) => {
                       <h3 className="display-heading-3">Staking</h3>
                       <div className="large-text space-bottom">Find out how delegating to a validator can earn you staking rewards.</div>
                     </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html#validators" target="_blank" className="btn btn-dark custom-btn">
+                    <a href="https://docs.terra.money/Concepts/Protocol.html#validators" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
                       <div>Staking</div><BsArrowUpRight />
                     </a>
                 </div>
@@ -755,7 +755,7 @@ const UserScreen = (props) => {
                       <h3 className="display-heading-3">Governance</h3>
                       <div className="large-text space-bottom">Discover how you can participate in the governance of the Terra protocol.<br /></div>
                     </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html#governance" target="_blank" className="btn btn-dark custom-btn">
+                    <a href="https://docs.terra.money/Concepts/Protocol.html#governance" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
                       <div>Governance</div><BsArrowUpRight />
                     </a>
                 </div>
@@ -764,7 +764,7 @@ const UserScreen = (props) => {
                       <h3 className="display-heading-3">Glossary</h3>
                       <div className="large-text space-bottom">Want to learn about a specific term? Use the glossary to find out more.<br /></div>
                     </div>
-                    <a href="https://docs.terra.money/Concepts/glossary.html" target="_blank" className="btn btn-dark custom-btn">
+                    <a href="https://docs.terra.money/Concepts/glossary.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
                       <div>Glossary</div><BsArrowUpRight />
                     </a>
                 </div>
@@ -818,7 +818,7 @@ const UserScreen = (props) => {
                     <a href="https://twitter.com/terra_money" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={twitter} loading="lazy" alt="" />
                     </a>
-                    <a href="https://t.me/TerraLunaChat" target="_blank" className="menu__social-icon w-inline-block">
+                    <a href="https://t.me/TerraLunaChat" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
                       <img src={telegram} loading="lazy" alt="" />
                     </a>
                     <a href="https://www.reddit.com/r/terraluna/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">

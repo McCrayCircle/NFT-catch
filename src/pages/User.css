@@ -3970,8 +3970,6 @@ Main Header style
   display: block;
   width: 100%;
   height: 70px;
-  background: #0b1326;
-  background: #000;
 }
 
 .main-header {
@@ -3980,8 +3978,6 @@ Main Header style
   top: 0px;
   width: 100%;
   z-index: 99;
-  background-color: #0b1326;
-  background-color: #000;
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
