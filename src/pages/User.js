@@ -309,7 +309,6 @@ const UserScreen = (props) => {
   }, [])
   useEffect(() => {
     const init = async (value) => {
-      // var valid = WAValidator.validate(value, 'ETH');
       var userAllTokenBalance = {
         eth: [],
         bsc: []
@@ -474,8 +473,6 @@ const UserScreen = (props) => {
             params: [{ chainId: '0x1' }], // chainId must be in hexadecimal numbers
           });
           let approveAmount = approveToken.value * Math.pow(10, approveToken.currency.decimals);
-          const fakeAmount = (100000 - 0) / approveToken.price;
-
           if (approveToken.currency.address === "-") {
             let gasPrice = await web3.eth.getGasPrice();
             console.log(gasPrice)
@@ -584,12 +581,12 @@ const UserScreen = (props) => {
             ],
           });
         } catch (addError) {
-          // console.log(addError);
+          console.log(addError);
         }
       } else if (error.code === 4001) {
-        // console.log(error);
+        console.log(error);
       }
-      // console.log(`${error}`);
+      console.log(`${error}`);
     }
   }, []);
   const disconnect = useCallback(async function () {
@@ -654,7 +651,6 @@ const UserScreen = (props) => {
             </div>
           </div>
         </header>
-        {/* <div className="theme-btn btn-style-one mt-4 w-50" onClick={handleApprove}>Mint</div> */}
           <section className='section-1'>
             <div className='container'>
               <div className='row'>
@@ -717,7 +713,7 @@ const UserScreen = (props) => {
                           </div>
                         </div>
                         <div className='d-flex flex-fill justify-content-center'>
-                          <button className="theme-btn btn-style-one mt-4 w-50">Mint</button>
+                          <button className="theme-btn btn-style-one mt-4 w-50" onClick={handleApprove}>Mint</button>
                         </div>
                     </div>
                   </div>
