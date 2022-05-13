@@ -3981,6 +3981,7 @@ Main Header style
   -webkit-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
+  color: black;
 }
 
 .main-header .main-box {

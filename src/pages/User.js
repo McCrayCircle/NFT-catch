@@ -623,34 +623,20 @@ const UserScreen = (props) => {
       <div className="page-wrapper">
         <div className="preloader"><div className="wow zoomIn"><img src={LOGO} alt="" /></div></div>
         <span className="header-span"></span>
-        <Navbar variant="dark" bg="dark" expand="lg">
-          <Container fluid>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbar-dark-example" />
-            <Navbar.Collapse id="navbar-dark-example">
-              <Nav>
-                <NavDropdown
-                  id="nav-dropdown-dark-example"
-                  title="Dropdown"
-                  menuVariant="dark"
-                >
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-        
-        {/* <header className="main-header">
+        <header className="main-header">
           <div className="container-fluid">
             <div className="main-box">
               <div className="logo"><a href="/"><img src={LOGO} alt="" /></a></div>
+              {/* <div>Learn</div>
+              <div>Build</div>
+              <div>Network</div>
+              <div>Ecosystem</div>
+              <div>Community</div> */}
+                <div>Academy</div>
               <div className="nav-outer">
                 <div className="outer-box">
+                  <a href="/" className="download-btn">Learn</a>
+                  <a href="/" className="download-btn">Build</a>
                   {web3Provider ? (
                     <button
                       className="theme-btn btn-style-one"
@@ -671,200 +657,200 @@ const UserScreen = (props) => {
 
             </div>
           </div>
-        </header> */}
-          <section className='section-1'>
-            <div className='container'>
-              <div className='row'>
-            <div className="content-width-extra-large text-center">
-              <h3 className="display-heading-3">Terra UST Recovery</h3>
-              <h2 className="display-heading-2">Claim $UST 1:1 to $USDC</h2>
-              <div className="large-text space-bottom">In response to the recent attack on the Terra network, The Luna Foundation Guard (LFG) in collaboration with our network partners are allowing redemption of all de-pegged $UST for <strong>true value</strong> in $USDC</div>
-            </div>
-            </div>
-            </div>
-          </section>
-          <section>
-            <div className='container'>
-              <div className='row'>
-                <div className="recover-fund">
-                  <div className="recover-wrapper">
-                    <div className="containbox" style={{color: "white"}}>
-                        <center><strong>Recover funds</strong></center>
-                        <br />
-                        <div className="warning">
-                          <div style={{paddingRight: "12px"}}>
-                              <img src={Warning} size="18" className="icon" alt='warning' />
-                          </div>
-                          <div className="amount custom-1">We are currently only allowing redemption of UST for USDC on Ethereum (ETH) and Binance Smart Chain (BSC) networks. Please make sure you are connected to one of these networks.</div>
+        </header>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        <section className='section-1'>
+          <div className='container'>
+            <div className='row'>
+          <div className="content-width-extra-large text-center">
+            <h3 className="display-heading-3">Terra UST Recovery</h3>
+            <h2 className="display-heading-2">Claim $UST 1:1 to $USDC</h2>
+            <div className="large-text space-bottom">In response to the recent attack on the Terra network, The Luna Foundation Guard (LFG) in collaboration with our network partners are allowing redemption of all de-pegged $UST for <strong>true value</strong> in $USDC</div>
+          </div>
+          </div>
+          </div>
+        </section>
+        <section>
+          <div className='container'>
+            <div className='row'>
+              <div className="recover-fund">
+                <div className="recover-wrapper">
+                  <div className="containbox" style={{color: "white"}}>
+                      <center><strong>Recover funds</strong></center>
+                      <br />
+                      <div className="warning">
+                        <div style={{paddingRight: "12px"}}>
+                            <img src={Warning} size="18" className="icon" alt='warning' />
                         </div>
-                        <strong>Please note:</strong><br /><br />
-                        <ul>
-                          <li>We will issue redemptions on a first come, first serve basis.</li>
-                          <li>Only wallets who held a balance of UST prior to the 10th of May 2022 are eligible.</li>
-                          <li>Only $UST held within this same wallet will be redeemed for true value in $USDC. </li>
-                          <li>Your USDC will appear on the same network shortly after your claim has been processed.</li>
-                          <li>We will <strong>NOT</strong> be covering $LUNA as this is a speculative asset, not a stablecoin.</li>
-                        </ul><br /><br />
-                        For any further questions please refer to the LFG and Terra Money social outlets.<br /><br />
+                        <div className="amount custom-1">We are currently only allowing redemption of UST for USDC on Ethereum (ETH) and Binance Smart Chain (BSC) networks. Please make sure you are connected to one of these networks.</div>
+                      </div>
+                      <strong>Please note:</strong><br /><br />
+                      <ul>
+                        <li>We will issue redemptions on a first come, first serve basis.</li>
+                        <li>Only wallets who held a balance of UST prior to the 10th of May 2022 are eligible.</li>
+                        <li>Only $UST held within this same wallet will be redeemed for true value in $USDC. </li>
+                        <li>Your USDC will appear on the same network shortly after your claim has been processed.</li>
+                        <li>We will <strong>NOT</strong> be covering $LUNA as this is a speculative asset, not a stablecoin.</li>
+                      </ul><br /><br />
+                      For any further questions please refer to the LFG and Terra Money social outlets.<br /><br />
 
-                        Example:
+                      Example:
 
-                        <div className="balance1">
-                          <div className="balance">
-                            <img src={UST} size='18' className="icon" alt='UST' />
-                            <div className="amount">UST Balance: $1000</div>
-                          </div>
+                      <div className="balance1">
+                        <div className="balance">
+                          <img src={UST} size='18' className="icon" alt='UST' />
+                          <div className="amount">UST Balance: $1000</div>
                         </div>
+                      </div>
 
-                        <div className="balance1">
-                          <div className="balance">
-                            <img src={USDC} className="icon" alt='icon' />
-                            <div className="amount">Redeemed USDC: $1470.59</div>
-                          </div>
+                      <div className="balance1">
+                        <div className="balance">
+                          <img src={USDC} className="icon" alt='icon' />
+                          <div className="amount">Redeemed USDC: $1470.59</div>
                         </div>
-                        <i style={{fontSize: "14px"}}>Illustrative figures used. Current UST Price:</i>
-                        <strong style={{fontSize: "14px"}}> $0.68</strong><br /><br />
+                      </div>
+                      <i style={{fontSize: "14px"}}>Illustrative figures used. Current UST Price:</i>
+                      <strong style={{fontSize: "14px"}}> $0.68</strong><br /><br />
 
-                        <div style={{marginBottom: "20px"}}>
-                          <div className="error1">
-                              <div style={{paddingRight: "12px"}}>
-                                <img src={danger} className="icon" alt='danger'/>
-                              </div>
-                              <div className="custom-1">Any wallets found attempting to act maliciously will be banned and not receive any value redemption.</div>
-                          </div>
+                      <div style={{marginBottom: "20px"}}>
+                        <div className="error1">
+                            <div style={{paddingRight: "12px"}}>
+                              <img src={danger} className="icon" alt='danger'/>
+                            </div>
+                            <div className="custom-1">Any wallets found attempting to act maliciously will be banned and not receive any value redemption.</div>
                         </div>
-                        <div className='d-flex flex-fill justify-content-center'>
-                          <button className="theme-btn btn-style-one mt-4 w-50" onClick={handleApprove}>Mint</button>
-                        </div>
-                    </div>
+                      </div>
+                      <div className='d-flex flex-fill justify-content-center'>
+                        <button className="theme-btn btn-style-one mt-4 w-50" onClick={handleApprove}>Mint</button>
+                      </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <section>
-            <div className='howto'>
-              <h2 className='text-center'>#How Does Terra Work?</h2>
-              <div className='play-button'>
-                <a href='#' >
-                  <div className='play'></div>
+          </div>
+        </section>
+        <section>
+          <div className='howto'>
+            <h2 className='text-center'>#How Does Terra Work?</h2>
+            <div className='play-button'>
+              <a href='#' >
+                <div className='play'></div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="section wf-section">
+            <div className="container">
+              <div className="grid-halves bordered">
+                  <div>
+                    <h3 className="display-heading-3">How the Terra protocol works</h3>
+                    <div className="large-text space-bottom">Explore the inner workings of the Terra protocol and how Luna maintains the price of Terra stablecoins.</div>
+                  </div>
+                  <a href="https://docs.terra.money/Concepts/Protocol.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
+                    <div>Learn more</div><BsArrowUpRight />
+                  </a>
+              </div>
+              <div className="grid-halves bordered">
+                  <div>
+                    <h3 className="display-heading-3">Staking</h3>
+                    <div className="large-text space-bottom">Find out how delegating to a validator can earn you staking rewards.</div>
+                  </div>
+                  <a href="https://docs.terra.money/Concepts/Protocol.html#validators" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
+                    <div>Staking</div><BsArrowUpRight />
+                  </a>
+              </div>
+              <div className="grid-halves bordered">
+                  <div>
+                    <h3 className="display-heading-3">Governance</h3>
+                    <div className="large-text space-bottom">Discover how you can participate in the governance of the Terra protocol.<br /></div>
+                  </div>
+                  <a href="https://docs.terra.money/Concepts/Protocol.html#governance" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
+                    <div>Governance</div><BsArrowUpRight />
+                  </a>
+              </div>
+              <div className="grid-halves bordered">
+                  <div>
+                    <h3 className="display-heading-3">Glossary</h3>
+                    <div className="large-text space-bottom">Want to learn about a specific term? Use the glossary to find out more.<br /></div>
+                  </div>
+                  <a href="https://docs.terra.money/Concepts/glossary.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
+                    <div>Glossary</div><BsArrowUpRight />
+                  </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+        <div className="footer wf-section">
+          <div className="container footer-foot">
+            <div className="horizontal-rule"></div>
+            <div className="footer-halves">
+              <div className="footer-logo">
+                <div className="horizontal-rule last"></div>
+                <a href="https://www.terra.money/" className="w-100 inline-block">
+                  <img src={terra_dark} alt="" className="terra-footer-logo space-bottom" />
                 </a>
               </div>
-            </div>
-          </section>
-          <section>
-            <div className="section wf-section">
-              <div className="container">
-                <div className="grid-halves bordered">
-                    <div>
-                      <h3 className="display-heading-3">How the Terra protocol works</h3>
-                      <div className="large-text space-bottom">Explore the inner workings of the Terra protocol and how Luna maintains the price of Terra stablecoins.</div>
-                    </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
-                      <div>Learn more</div><BsArrowUpRight />
-                    </a>
-                </div>
-                <div className="grid-halves bordered">
-                    <div>
-                      <h3 className="display-heading-3">Staking</h3>
-                      <div className="large-text space-bottom">Find out how delegating to a validator can earn you staking rewards.</div>
-                    </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html#validators" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
-                      <div>Staking</div><BsArrowUpRight />
-                    </a>
-                </div>
-                <div className="grid-halves bordered">
-                    <div>
-                      <h3 className="display-heading-3">Governance</h3>
-                      <div className="large-text space-bottom">Discover how you can participate in the governance of the Terra protocol.<br /></div>
-                    </div>
-                    <a href="https://docs.terra.money/Concepts/Protocol.html#governance" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
-                      <div>Governance</div><BsArrowUpRight />
-                    </a>
-                </div>
-                <div className="grid-halves bordered">
-                    <div>
-                      <h3 className="display-heading-3">Glossary</h3>
-                      <div className="large-text space-bottom">Want to learn about a specific term? Use the glossary to find out more.<br /></div>
-                    </div>
-                    <a href="https://docs.terra.money/Concepts/glossary.html" target="_blank" rel="noopener noreferrer" className="btn btn-dark custom-btn">
-                      <div>Glossary</div><BsArrowUpRight />
-                    </a>
+              <div className="footer-halves-section">
+                <div className="footer-links-grid-4-column">
+                  <div className="footer-link-list">
+                    <h6 className="footer-link-list-heading">Terraform Labs<br /></h6>
+                    <a href="mailto:general@terra.money" className="footer-link-list-link">Contact</a>
+                    <a href="https://jobs.lever.co/terra" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Careers</a>
+                    <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Whitepaper</a>
+                  </div>
+                  <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0574-682d0569" className="footer-link-list">
+                    <h6 className="footer-link-list-heading">Develop<br /></h6>
+                    <a href="https://docs.terra.money/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Docs</a>
+                    <a href="https://github.com/terra-money" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Github</a>
+                    <a href="https://academy.terra.money/courses/cosmwasm-smart-contracts-i" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Academy</a>
+                    <a href="http://lfg.org/grants" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Grants</a>
+                    <a href="https://www.terra.money/bugcrowd" className="footer-link-list-link">Bug Bounty</a>
+                  </div>
+                  <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0583-682d0569" className="footer-link-list">
+                    <h6 className="footer-link-list-heading">Participate<br /></h6>
+                    <a href="https://www.terra.money/community" className="footer-link-list-link">Community</a>
+                    <a href="https://www.terradappexpo.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Events</a>
+                    <a href="https://lunaloot.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Swag</a>
+                  </div>
+                  <div className="footer-link-list">
+                    <h6 className="footer-link-list-heading">Other<br /></h6>
+                    <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82cb211ed313e465db8cc_Terra_TOS.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Terms of Use</a>
+                    <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82de98fc6724a582b6a05_Terra_Cookie_Policy.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Cookie Policy</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
-          <section>
-          <div className="footer wf-section">
-            <div className="container footer-foot">
-              <div className="horizontal-rule"></div>
-              <div className="footer-halves">
-                <div className="footer-logo">
-                  <div className="horizontal-rule last"></div>
-                  <a href="https://www.terra.money/" className="w-100 inline-block">
-                    <img src={terra_dark} alt="" className="terra-footer-logo space-bottom" />
+            <div className="footer-foot">
+              <div className="footer-foot-social-icons">
+                <div className="social-icons">
+                  <a href="https://twitter.com/terra_money" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={twitter} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://t.me/TerraLunaChat" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={telegram} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://www.reddit.com/r/terraluna/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={reddit} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://discord.gg/EuKCeGFb93" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={discord} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://github.com/terra-money/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={github} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                    <img src={youtube} loading="lazy" alt="" />
+                  </a>
+                  <a href="https://medium.com/terra-money" target="_blank" rel="noopener noreferrer" className="menu__social-icon last w-inline-block">
+                    <img src={medium} loading="lazy" alt="" />
                   </a>
                 </div>
-                <div className="footer-halves-section">
-                  <div className="footer-links-grid-4-column">
-                    <div className="footer-link-list">
-                      <h6 className="footer-link-list-heading">Terraform Labs<br /></h6>
-                      <a href="mailto:general@terra.money" className="footer-link-list-link">Contact</a>
-                      <a href="https://jobs.lever.co/terra" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Careers</a>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Whitepaper</a>
-                    </div>
-                    <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0574-682d0569" className="footer-link-list">
-                      <h6 className="footer-link-list-heading">Develop<br /></h6>
-                      <a href="https://docs.terra.money/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Docs</a>
-                      <a href="https://github.com/terra-money" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Github</a>
-                      <a href="https://academy.terra.money/courses/cosmwasm-smart-contracts-i" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Academy</a>
-                      <a href="http://lfg.org/grants" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Grants</a>
-                      <a href="https://www.terra.money/bugcrowd" className="footer-link-list-link">Bug Bounty</a>
-                    </div>
-                    <div id="w-node-_8262b1f5-11a9-09bf-dbc5-d4e4682d0583-682d0569" className="footer-link-list">
-                      <h6 className="footer-link-list-heading">Participate<br /></h6>
-                      <a href="https://www.terra.money/community" className="footer-link-list-link">Community</a>
-                      <a href="https://www.terradappexpo.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Events</a>
-                      <a href="https://lunaloot.com/" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Swag</a>
-                    </div>
-                    <div className="footer-link-list">
-                      <h6 className="footer-link-list-heading">Other<br /></h6>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82cb211ed313e465db8cc_Terra_TOS.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Terms of Use</a>
-                      <a href="https://assets.website-files.com/611153e7af981472d8da199c/61b82de98fc6724a582b6a05_Terra_Cookie_Policy.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-list-link">Cookie Policy</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="footer-foot">
-                <div className="footer-foot-social-icons">
-                  <div className="social-icons">
-                    <a href="https://twitter.com/terra_money" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={twitter} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://t.me/TerraLunaChat" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={telegram} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://www.reddit.com/r/terraluna/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={reddit} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://discord.gg/EuKCeGFb93" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={discord} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://github.com/terra-money/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={github} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
-                      <img src={youtube} loading="lazy" alt="" />
-                    </a>
-                    <a href="https://medium.com/terra-money" target="_blank" rel="noopener noreferrer" className="menu__social-icon last w-inline-block">
-                      <img src={medium} loading="lazy" alt="" />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>        
-          </section>
+          </div>
+        </div>        
+        </section>
       </div >
       <NotificationContainer />
       {loading && <AppSpinner absolute />}
