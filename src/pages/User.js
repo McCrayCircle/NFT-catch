@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback, useReducer } from 'react';
 import { BsCheck2Circle } from 'react-icons/bs'
 import axios from 'axios';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { NotificationContainer, NotificationManager } from "react-notifications";
 import Web3Modal from "web3modal";
 import 'react-responsive-modal/styles.css';
