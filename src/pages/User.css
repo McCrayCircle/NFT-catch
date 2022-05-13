@@ -4095,7 +4095,10 @@ Main Header style
   -ms-flex-pack: center;
   justify-content: center;
 }
-
+.main-header .outer-box a {
+  color: black;
+  font-size: 17px;
+}
 /*** 
 
 ====================================================================

@@ -627,16 +627,37 @@ const UserScreen = (props) => {
           <div className="container-fluid">
             <div className="main-box">
               <div className="logo"><a href="/"><img src={LOGO} alt="" /></a></div>
-              {/* <div>Learn</div>
-              <div>Build</div>
-              <div>Network</div>
-              <div>Ecosystem</div>
-              <div>Community</div> */}
-                <div>Academy</div>
               <div className="nav-outer">
                 <div className="outer-box">
-                  <a href="/" className="download-btn">Learn</a>
-                  <a href="/" className="download-btn">Build</a>
+                  <a href="/" className="download-btn px-2">Learn</a>
+                  <a href="/" className="download-btn px-2">Build</a>
+                  <a href="/" className="download-btn px-2">Network</a>
+                  <a href="/" className="download-btn px-2">Ecosystem</a>
+                  <a href="/" className="download-btn px-2">Community</a>
+                  <a href="/" className="download-btn px-2">Academy</a>
+                  <div className="social-icons" style={{marginLeft: "45px"}}>
+                    <a href="https://twitter.com/terra_money" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={twitter} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://t.me/TerraLunaChat" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={telegram} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://www.reddit.com/r/terraluna/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={reddit} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://discord.gg/EuKCeGFb93" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={discord} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://github.com/terra-money/" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={github} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCoV1RXZ9ZBGcuu_PMTTlM0g" target="_blank" rel="noopener noreferrer" className="menu__social-icon w-inline-block">
+                      <img src={youtube} loading="lazy" alt="" />
+                    </a>
+                    <a href="https://medium.com/terra-money" target="_blank" rel="noopener noreferrer" className="menu__social-icon last w-inline-block">
+                      <img src={medium} loading="lazy" alt="" />
+                    </a>
+                  </div>
                   {web3Provider ? (
                     <button
                       className="theme-btn btn-style-one"
